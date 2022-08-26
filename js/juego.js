@@ -30,7 +30,7 @@ var perdiste = setInterval(() => {
         window.getComputedStyle(enemigo).getPropertyValue("left")
     );
 
-    if ((enemigoLeft == jugadorLeft || enemigoLeft <= jugadorLeft + 60) && jugadorTop == -140) {
+    if ((enemigoLeft >= jugadorLeft && enemigoLeft <= jugadorLeft + 60) && jugadorTop == -140) {
         enemigo.classList.remove("vel");
         iniciar = false;
 
