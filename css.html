@@ -6,29 +6,63 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conocimientos web</title>
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
 
 <body>
-    <h1>Conocimientos webs</h1>
-    <nav class="conocimiento">
-        <ul class="titulo">
-            <li class="Inicio">
-                <a href="index.html">Inicio</a>
-            </li>
+    <div id="contenedor">
+        <header>
+            <h1>Conocimientos webs</h1>
+        </header>
 
-            <li class="HTML">
-                <a href="html.html">HTML</a>
-            </li>
 
-            <li class="CSS">
-                <a href="css.html">CSS</a>
-            </li>
+        <nav class="conocimiento">
+            <ul class="titulo">
+                <li class="Inicio">
+                    <a href="index.html">HTML</a>
+                </li>
 
-            <li class="Javascript">
-                <a href="javascript.html">Javascrip</a>
-            </li>
-        </ul>
-    </nav>
+                <li class="CSS">
+                    <a href="css.html">CSS</a>
+                </li>
+
+                <li class="Javascript">
+                    <a href="javascript.html">Javascrip</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="clearfix"></div>
+
+        <section id="contenido">
+            <article class="article">
+                <h2> Entramos al mundo del CSS</h2>
+                <p>En este punto podemos cambiar y darle forma a la pagina haciendola ver más estetica y no solo como
+                    texto consecutivo y se le puede dar un lugar especial a cada elemento.</p>
+            </article>
+            <article class="article">
+                <h2>¿Qué es CSS?</h2>
+                <p>Son hojas de estilos, las cuales no pueden funcionar sin html y estas son instrucciones para el
+                    navegador para ordenar la información de manera inteligente.</p>
+            </article>
+            <article class="article">
+                <h2>Conectando css</h2>
+                <p>Para poder ocupar css, es necesario nombrar cada componente que se quiera editar para poder tener una
+                    referencia de este dentro de un archivo css.</p>
+            </article>
+            <img width="100px" src="https://c.tenor.com/JMzBeLgNaSoAAAAi/banana-dance.gif" alt="banana Dance">
+        </section>
+
+        <aside>
+            <h2>Barra lateral</h2>
+            <p>Aqui se puede mostrar como podemos ordenar texto que logicamente en html esta por debajo del contenido
+                principal, pero se ubica de un lado</p>
+        </aside>
+
+        <footer>
+            pie de pagina
+        </footer>
+    </div>
 
 </body>
 

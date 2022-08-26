@@ -1,0 +1,61 @@
+#juego{
+    padding: 0;
+    margin: 0;
+    width: 500px;
+    height: 200px;
+    border: 1px solid black;
+}
+
+#enemigo{
+    width: 5px;
+    height: 200px;
+    background: red;
+    position: relative;
+    left: 495px;
+    
+}
+
+.vel{
+    animation: enemigo 1200ms infinite linear;
+}
+
+@keyframes enemigo {
+    0%{left:495px;}
+    100%{left:0px;}
+}
+
+#jugador {
+    width: 60px;
+    height: 60px;
+    background: blue;
+    position: relative;
+    top: -140px;
+    left: 80px;
+}
+
+.animar{
+    animation: saltar 700ms linear;
+}
+
+@keyframes saltar {
+    0%{
+        top: -140px;
+        height: 60px;
+        width: 60px;
+    }
+    30%{
+        top: -150px;
+        height: 80px;
+        width: 80px;
+    }
+    70%{
+        top: -150px;
+        height: 80px;
+        width: 80px;
+    }
+    100%{
+        top: -140px;
+        height: 60px;
+        width: 60px;
+    }
+}

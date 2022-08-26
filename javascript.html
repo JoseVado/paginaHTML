@@ -6,30 +6,82 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conocimientos web</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/estiloJavascript.css">
 </head>
 
 <body>
-    <h1>Conocimientos webs</h1>
-    <nav class="conocimiento">
-        <ul class="titulo">
-            <li class="Inicio">
-                <a href="index.html">Inicio</a>
-            </li>
+    <div id="contenedor">
+        <header>
+            <h1>Conocimientos webs</h1>
+        </header>
+        <nav class="conocimiento">
+            <ul class="titulo">
+                <li class="Inicio">
+                    <a href="index.html">HTML</a>
+                </li>
 
-            <li class="HTML">
-                <a href="html.html">HTML</a>
-            </li>
+                <li class="CSS">
+                    <a href="css.html">CSS</a>
+                </li>
 
-            <li class="CSS">
-                <a href="css.html">CSS</a>
-            </li>
+                <li class="Javascript">
+                    <a href="javascript.html">Javascrip</a>
+                </li>
+            </ul>
+        </nav>
+        <hr>
 
-            <li class="Javascript">
-                <a href="javascript.html">Javascrip</a>
-            </li>
-        </ul>
-    </nav>
+        <div class="clearfix"></div>
 
+        <section id="contenido">
+            <article class="article">
+                <h2>Llego javascript</h2>
+                <p>Ahora podemos darle utilidad a los formularios vistos en html basico por ejemplo</p>
+                <form id="frm1">
+                    Nombre(s): <input type="text"><br>
+                    Apellidos: <input type="text"><br>
+                </form>
+                
+                <button onclick="nombres()">Unirlos</button>
+                <p id="varNombre"></p>
+            </article>
+            <article class="article">
+                <h2>¿Qué tan útil es?</h2>
+                <p>Realmente como se tiene control absoluto de lo que se puede recibir y transmitir con javascript, podemos hacer lo que sea, ejemplo un juego: </p>
+                <p>Presione la pantalla para saltar</p>
+                <div id="juego" onclick="saltar()">
+                    <div id="enemigo"></div>
+                    <div id="jugador"></div>
+                </div>
+                <p id="anuncioJuego"></p>
+            </article>
+        </section>
+        <aside>
+            <h2>Calculadora</h2>
+            <form id="calc">
+                Primer número<input type="number">
+                Segundo número<input type="number">
+                Operación <br>
+                
+                <input type="radio" name="operando" value="+"> + 
+                <input type="radio" name="operando" value="-"> -
+                <input type="radio" name="operando" value="x"> x
+                <input type="radio" name="operando" value="/"> /
+                
+            </form>
+            <br><button onclick="calcular()">calcular</button>
+            <br>Respuesta:
+            <br> <input type="text" disabled id="respuesta">
+        </aside>
+        
+        <footer>
+            pie de pagina
+        </footer>
+        
+    </div>
 </body>
-
+<script src="js/juego.js"></script>
+<script src="js/calculadora.js"></script>
+<script src="js/formulario.js"></script>
 </html>
